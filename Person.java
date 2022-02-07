@@ -63,6 +63,6 @@ public class Person {
     
     @Override
     public String toString() {
-        return "Information of teacher[ name: " + name + ", age: " + age + ", home town: " + homeTown + ", code: " + code + ", hard salary: " + ", bonus salary: " + bonus + ", fine: " + fine + "]"; 
+        return "Information of teacher[ name: " + name + ", age: " + age + ", home town: " + homeTown + ", code: " + code + ", hard salary: "+ hardSalary + ", bonus salary: " + bonus + ", fine: " + fine + "]"; 
     }
 }
