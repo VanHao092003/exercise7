@@ -12,8 +12,15 @@ public class ManageTeacher {
         this.persons.add(person);
     }
 
-    public Person deleteByCode(String code){
-        return this.persons.stream().filter(o -> o.getCode().equals(code)).findFirst().orElse(null);
+    public void deleteByCode(String code){
+        Person person =  this.persons.stream().filter(o -> o.getCode().equals(code)).findFirst().orElse(null);
+        if(person != null){
+            System.out.println(person.toString());
+            persons.remove(person);
+        }
+        else {
+            System.out.println("There are no the value of code at this list.");
+        }
     }
 
     public void salary(){

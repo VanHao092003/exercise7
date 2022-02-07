@@ -30,8 +30,7 @@ public class Main {
                 }
                 case "2":{
                     System.out.print("Enter code of teacher want to delete: "); String code = scanner.nextLine();
-                    System.out.println(manageTeacher.deleteByCode(code).toString());
-                    if(manageTeacher.deleteByCode(code) == null) System.out.println("There are no the value code at this list teacher.");
+                    manageTeacher.deleteByCode(code);
                 }
                 case "3":{
                     System.out.println("Salary each teacher: ");
