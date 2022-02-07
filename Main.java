@@ -31,6 +31,7 @@ public class Main {
                 case "2":{
                     System.out.print("Enter code of teacher want to delete: "); String code = scanner.nextLine();
                     manageTeacher.deleteByCode(code);
+                    break;
                 }
                 case "3":{
                     System.out.println("Salary each teacher: ");
