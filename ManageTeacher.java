@@ -19,7 +19,7 @@ public class ManageTeacher {
     public void salary(){
         for(Person person : persons){
             System.out.print("Salary of teacher " + person.getName() + ": ");
-            System.out.println(person.getHardSalary() + person.getBonus() + person.getFine());
+            System.out.println(person.getHardSalary() + person.getBonus() - person.getFine());
         } 
     }
 }
