@@ -24,7 +24,7 @@ public class Main {
                     Person person = new Person(name, age, homeTown, code, hardSalary, bonus, fine);
                     manageTeacher.addTeacher(person);
                     System.out.println("information you have just entered.");
-                    person.toString();
+                    System.out.println(person.toString());
                     System.out.println("--------------------------------------------");
                     break;
                 }
